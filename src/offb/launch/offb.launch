@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 <launch>
-    <include file="$(find px4)/launch/mavros_posix_sitl.launch"/>
+    <include file="$(find px4)/launch/mavros_posix_sitl.launch">
+        <arg name="world" default="$(find mavlink_sitl_gazebo)/worlds/empty.world"/>
+        <arg name="sdf" default="$(find mavlink_sitl_gazebo)/models/iris_stereo_camera/iris_stereo_camera.sdf"/>
+    </include>
 
     <node name="offb" pkg="offb" type="offb_node" output="screen"/>
 </launch>
