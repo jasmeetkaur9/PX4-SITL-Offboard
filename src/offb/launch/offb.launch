@@ -3,7 +3,7 @@
 <!--To launch with a vehicle different from default, no need to pass the vehicle argument. Look at https://github.com/PX4/PX4-Autopilot/pull/16993#issuecomment-803464472-->
     <include file="$(find px4)/launch/mavros_posix_sitl.launch">
         <arg name="world" default="$(find mavlink_sitl_gazebo)/worlds/tcrh.world"/>
-        <arg name="sdf" default="$(find mavlink_sitl_gazebo)/models/iris_stereo_camera/iris_stereo_camera.sdf"/>
+        <arg name="sdf" default="$(find mavlink_sitl_gazebo)/models/iris_zed_camera/iris_zed_camera.sdf"/>
     </include>
 
     <node name="offb" pkg="offb" type="offb_node" output="screen"/>
