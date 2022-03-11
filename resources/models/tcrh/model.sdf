@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="tcrh">
+    <static>true</static>
+    <!--
+    <link name="link_height">
+      <collision name="collision_height">
+       <geometry>
+            <heightmap>
+              <uri>model://tcrh/materials/textures/heightmap.png</uri>
+              <size>122.62413 122.62413 24.57085</size>
+              <pos>0 0 -4.499653</pos>
+            </heightmap>
+       </geometry>
+      </collision>
+      <visual name="visual_height">
+        <geometry>
+          <heightmap>
+             <use_terrain_paging>false</use_terrain_paging>
+              <texture>
+                <diffuse>model://tcrh/materials/textures/texture_simple.png</diffuse>
+                <normal>model://tcrh/materials/textures/flat_normal.png</normal>
+                <size>1</size>
+              </texture>
+              <uri>model://tcrh/materials/textures/heightmap.png</uri>
+              <size>122.62413 122.62413 24.57085</size>
+              <pos>0 0 -4.499653</pos>
+          </heightmap>
+        </geometry>
+      </visual>
+    </link>
+    -->
+    <link name="link_mesh">
+      <collision name="collision_mesh">
+       <!--
+       <geometry>
+            <heightmap>
+              <uri>model://tcrh/materials/textures/heightmap.png</uri>
+              <size>122.62413 122.62413 24.57085</size>
+              <pos>0 0 -4.499653</pos>
+            </heightmap>
+       </geometry>
+       -->
+        <geometry>
+           <mesh>
+             <uri>model://tcrh/materials/textures/tcrh_rotated_cleaned_simplified_shifted.dae</uri>
+             <scale>1 1 1</scale>
+           </mesh>
+         </geometry>
+      </collision>
+      <visual name="visual_mesh">
+        <geometry>
+           <mesh>
+             <uri>model://tcrh/materials/textures/tcrh_rotated_cleaned_simplified_shifted.dae</uri>
+             <scale>1 1 1</scale>
+           </mesh>
+         </geometry>
+       </visual>
+    </link>
+  </model>
+</sdf>
